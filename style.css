@@ -11,8 +11,77 @@ body {
   max-width: 100%;
 }
 
-.kurdeFlak {
-  background: rebeccapurple;
+.color-set__form {
+  width: 150px;
+  height: 150px;
+}
+
+.color-set__fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: white;
+}
+
+.color-set__label {
+  width: 50px;
+  height: 50px;
+  border: solid gray 0.025em;
+}
+
+.color-set__label--white {
+  background-color: white;
+  border: solid gray 0.025em;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.color-set__label--yellow {
+  background-color: yellow;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.color-set__label--orange {
+  background-color: orange;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.color-set__label--red {
+  background-color: red;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.color-set__label--pink {
+  background-color: hotpink;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.color-set__label--purple {
+  background-color: purple;
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.color-set__label--blue {
+  background-color: blue;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.color-set__label--green {
+  background-color: green;
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.color-set__label--brown {
+  background-color: rgb(124, 34, 34);
+  grid-column: 3;
+  grid-row: 3;
 }
 
 .hamburger {
@@ -30,6 +99,10 @@ body {
   width: 100%;
 }
 
+.kurdeFlak {
+  background: rebeccapurple;
+}
+
 .navigation {
   background: rebeccapurple;
   padding: 16px;
@@ -44,6 +117,11 @@ body {
 
 .navigation--open {
   display: block;
+}
+
+.paragraph__link--moby:hover {
+  font-weight: bold;
+  color: rebeccapurple;
 }
 
 @media (min-width: 768px) {
@@ -67,6 +145,3 @@ body {
     margin-bottom: 16px;
   }
 }
-
-
-
